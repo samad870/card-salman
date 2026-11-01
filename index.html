@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Salman &amp; Shahnuma — Barat &amp; Walima</title>
+<meta property="og:title" content="Salman &amp; Shahnuma — Barat 14 Nov &amp; Walima 15 Nov 2026">
+<meta property="og:description" content="Open your invitation">
+<meta name="theme-color" content="#06241b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#06241b;--g2:#0b3d2e;--g3:#11624b;--gold:#d9b44a;--gold2:#f3dc95;--gold3:#9a7424;--cream:#f7f1e1;--ink:#0b3d2e}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{background:#030c09;color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.55;overflow-x:hidden}
+body.locked{overflow:hidden;height:100svh}
+.app{max-width:480px;margin:0 auto;position:relative;overflow:hidden;background:var(--g1)}
+.scene{min-height:100svh;padding:72px 22px 64px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;scroll-snap-align:start}
+.dark{background:radial-gradient(ellipse at 50% 0,#12594a 0,var(--g2) 45%,var(--g1) 100%)}
+.dark:before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d9b44a' stroke-opacity='.16'%3E%3Cpath d='M40 6l9 22 22 9-22 9-9 22-9-22-22-9 22-9z'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E")}
+.dark>*{position:relative}
+.marble{color:var(--ink);background:
+ linear-gradient(115deg,transparent 40%,rgba(150,140,120,.10) 41%,transparent 43%),
+ linear-gradient(62deg,transparent 55%,rgba(150,140,120,.09) 56%,transparent 58.5%),
+ linear-gradient(170deg,transparent 20%,rgba(150,140,120,.07) 21%,transparent 23%),
+ radial-gradient(ellipse at 20% 5%,#fffef8,transparent 60%),#f3ecda}
+.script{font-family:'Great Vibes',cursive;font-weight:400;line-height:1.15}
+.g{color:var(--gold);text-shadow:0 2px 14px rgba(217,180,74,.35)}
+.gd{color:var(--gold3)}
+.cap{font-family:'Cinzel',serif;letter-spacing:.3em;text-transform:uppercase;font-size:11px;color:var(--gold2)}
+.marble .cap{color:var(--gold3)}
+.dia{width:150px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:14px auto;position:relative}
+.dia:after{content:"";position:absolute;left:50%;top:-4px;width:8px;height:8px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.hint{font-style:italic;font-size:16px;opacity:.7;margin-top:14px}
+.fade{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
+.fade.in{opacity:1;transform:none}
+
+/* cover */
+#cover{position:fixed;inset:0;max-width:480px;margin:0 auto;z-index:50;overflow:hidden;background:#030c09}
+.door{position:absolute;top:0;bottom:0;width:50%;transition:transform 1.8s cubic-bezier(.7,0,.2,1);
+ background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='96'%3E%3Cg fill='none' stroke='%23d9b44a' stroke-opacity='.6'%3E%3Cpath d='M32 0C32 20 12 24 12 44s20 24 20 52'/%3E%3Cpath d='M32 0C32 20 52 24 52 44S32 68 32 96'/%3E%3Ccircle cx='32' cy='46' r='6'/%3E%3Ccircle cx='32' cy='46' r='2' fill='%23d9b44a'/%3E%3C/g%3E%3C/svg%3E"),
+  linear-gradient(180deg,#0e4b3a,#06241b)}
+.door.l{left:0;border-right:3px solid var(--gold);box-shadow:inset -18px 0 30px rgba(0,0,0,.45)}
+.door.r{right:0;border-left:3px solid var(--gold);box-shadow:inset 18px 0 30px rgba(0,0,0,.45)}
+.door:after{content:"";position:absolute;top:14px;bottom:14px;left:12px;right:12px;border:1px solid rgba(217,180,74,.6);border-radius:120px 120px 0 0}
+#seal{position:absolute;left:50%;top:50%;width:120px;height:120px;transform:translate(-50%,-50%);border:0;background:none;cursor:pointer;z-index:3;filter:drop-shadow(0 6px 18px rgba(0,0,0,.6));transition:transform .8s,opacity .8s;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{transform:translate(-50%,-50%) scale(1.07)}}
+#cover .tap{position:absolute;left:0;right:0;bottom:12%;text-align:center;z-index:3;transition:opacity .6s}
+#cover .top{position:absolute;left:0;right:0;top:9%;text-align:center;z-index:3;transition:opacity .6s}
+#cover.open .door.l{transform:translateX(-102%)}
+#cover.open .door.r{transform:translateX(102%)}
+#cover.open #seal{transform:translate(-50%,-50%) scale(2.4);opacity:0;animation:none}
+#cover.open .tap,#cover.open .top{opacity:0}
+.spin{transform-box:fill-box;transform-origin:center;animation:rot 20s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* hall */
+.arch{width:100%;max-width:360px;padding:54px 22px 40px;border:2px solid var(--gold);border-radius:180px 180px 6px 6px;outline:1px solid rgba(217,180,74,.4);outline-offset:8px;
+ background:radial-gradient(ellipse at 50% 0,rgba(243,220,149,.28),transparent 60%),rgba(6,36,27,.6)}
+.bism{font-family:'Amiri',serif;color:var(--gold);font-size:28px;direction:rtl;margin-bottom:14px}
+.names{font-size:clamp(40px,12vw,58px);margin:4px 0 0}
+.and{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold2);font-size:20px;margin:6px 0 0}
+.scrollhint{position:absolute;bottom:18px;left:0;right:0;color:var(--gold2);font-size:13px;letter-spacing:.3em;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+
+/* casket + letter */
+.casket{width:min(300px,86%);margin:20px auto 0;cursor:pointer;position:relative}
+.casket svg{width:100%;display:block;overflow:visible}
+#lid{transition:transform 1.1s cubic-bezier(.3,1.3,.5,1);transform-origin:150px 96px}
+.casket.open #lid{transform:translateY(-52px) rotate(-7deg)}
+#beam{opacity:0;transition:opacity 1s .3s}
+.casket.open #beam{opacity:1}
+.paper{max-height:0;opacity:0;overflow:hidden;transition:max-height 1.6s ease,opacity 1.2s ease;max-width:360px;width:100%}
+.paper.show{max-height:900px;opacity:1}
+.paper .sheet{margin-top:22px;padding:28px 22px;background:#fffdf5;border:1px solid #d9c58a;box-shadow:0 12px 30px rgba(60,50,20,.18),inset 0 0 0 5px #fffdf5,inset 0 0 0 6px #e5d39a;border-radius:3px;font-size:20px}
+.paper p{margin:10px 0}
+.gn{font-weight:600}
+
+/* families */
+.rail{width:86%;height:3px;background:linear-gradient(90deg,var(--gold3),var(--gold2),var(--gold3));border-radius:2px;margin:26px auto 0;position:relative}
+.rail:before,.rail:after{content:"";position:absolute;top:-4px;width:11px;height:11px;border-radius:50%;background:var(--gold)}
+.rail:before{left:-4px}.rail:after{right:-4px}
+.lanterns{display:flex;justify-content:space-around;width:100%;margin-top:-2px}
+.lan{width:44%;transform-origin:50% 0;animation:sway 4.5s ease-in-out infinite alternate}
+.lan:nth-child(2){animation-delay:-2s}
+@keyframes sway{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.lan svg{width:80%;margin:0 auto;display:block;filter:drop-shadow(0 0 18px rgba(255,200,90,.35))}
+.lan .cap{margin-top:6px}
+.lan p{font-size:18px;margin-top:6px}
+
+/* events */
+.ev{display:flex;gap:16px;align-items:center;width:100%;margin:22px 0;text-align:left}
+.ev.flip{flex-direction:row-reverse;text-align:right}
+.jh{width:118px;flex:none;cursor:pointer}
+.jh .dome{display:block;width:70%;margin:0 auto -2px}
+.win{position:relative;height:128px;padding:5px;background:linear-gradient(135deg,#f3dc95,#b88a2c 60%,#f3dc95);border-radius:60px 60px 0 0}
+.win .in{position:absolute;inset:5px;border-radius:55px 55px 0 0;overflow:hidden;
+ background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(243,220,149,.85) 9px 10px),repeating-linear-gradient(-45deg,transparent 0 9px,rgba(243,220,149,.85) 9px 10px),#117a5a;
+ box-shadow:inset 0 0 26px rgba(255,214,120,.9)}
+.shut{position:absolute;top:0;bottom:0;width:50.5%;background:linear-gradient(180deg,#0e5a43,#083a2c);transition:transform 1.1s cubic-bezier(.6,0,.2,1)}
+.shut:after{content:"";position:absolute;inset:8px 6px;border:1px solid rgba(243,220,149,.7);border-radius:40px 40px 0 0}
+.shut.sl{left:0;border-right:1px solid var(--gold)}.shut.sr{right:0;border-left:1px solid var(--gold)}
+.open .shut.sl{transform:translateX(-100%)}.open .shut.sr{transform:translateX(100%)}
+.sill{height:16px;margin:0 -6px;background:linear-gradient(#e9dcb8,#b9a572);border-radius:2px;box-shadow:0 6px 10px rgba(0,0,0,.15)}
+.evt{flex:1;min-width:0}
+.evt h3{font-size:44px;color:var(--gold3)}
+.ev .dia{margin:6px 0 8px;width:70px}.ev .dia{margin-left:0}.ev.flip .dia{margin-left:auto;margin-right:0}
+.wd{font-family:'Cinzel',serif;letter-spacing:.16em;font-size:12px}
+.dm{font-family:'Cinzel',serif;letter-spacing:.1em;font-size:13px;color:var(--gold3)}
+.tm{font-style:italic;font-size:19px;margin-top:2px}
+.more{max-height:0;opacity:0;overflow:hidden;transition:all .9s ease}
+.open .more{max-height:200px;opacity:1;margin-top:10px}
+.vn{font-size:17px}
+.evb{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}.flip .evb{justify-content:flex-end}
+.b{font:inherit;font-size:14px;border:1px solid var(--gold3);color:var(--gold3);background:transparent;padding:5px 12px;border-radius:20px;text-decoration:none;cursor:pointer}
+.b:hover{background:var(--gold3);color:#fff}
+.hint2{font-style:italic;font-size:15px;opacity:.55;margin-top:8px}
+.open .hint2{display:none}
+
+/* astrolabe */
+.astro{width:min(300px,84%);margin:14px auto 0;filter:drop-shadow(0 8px 24px rgba(0,0,0,.5))}
+.astro svg{width:100%;display:block}
+.r1{transform-box:fill-box;transform-origin:center;animation:rot 90s linear infinite}
+.r2{transform-box:fill-box;transform-origin:center;animation:rot 60s linear infinite reverse}
+.r3{transform-box:fill-box;transform-origin:center;animation:rot 40s linear infinite}
+.cd{display:flex;gap:10px;justify-content:center;margin-top:20px}
+.cd div{width:70px;padding:9px 0;border:1px solid rgba(217,180,74,.6);border-radius:8px;background:rgba(6,36,27,.6)}
+.cd b{display:block;font-family:'Cinzel',serif;font-weight:600;font-size:26px;color:var(--gold)}
+.cd span{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.2em;color:var(--gold2)}
+
+/* rsvp */
+.rsvp{width:100%;max-width:380px;margin-top:20px;padding:26px 18px 24px;background:#fbf6e6;color:var(--ink);position:relative;box-shadow:0 14px 34px rgba(60,50,20,.2);
+ border:9px solid transparent;border-image:repeating-linear-gradient(90deg,#b88a2c 0 6px,#f3dc95 6px 9px,#0f6a4f 9px 15px,#f3dc95 15px 18px) 9}
+.rsvp label{display:block;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold3);margin:14px 0 6px}
+.rsvp input,.rsvp textarea,.rsvp select{width:100%;font:inherit;font-size:20px;background:#fffdf6;border:0;border-bottom:1px solid var(--gold3);padding:8px 6px;color:var(--ink);text-align:center;outline:none;border-radius:0}
+.rsvp textarea{height:84px;border:1px solid #d9c58a;text-align:left;font-size:18px;resize:none;padding:8px 10px}
+.bangles{display:flex;justify-content:space-between;gap:4px;margin-top:6px}
+.bangle{flex:1;border:0;background:none;color:inherit;font:inherit;cursor:pointer;padding:0}
+.bangle svg{width:100%;max-width:62px;display:block;margin:0 auto}
+.bangle .ring{transition:transform .7s cubic-bezier(.3,1.4,.5,1),opacity .5s;transform:translateY(0);opacity:.6}
+.bangle.on .ring{transform:translateY(-44px);opacity:1;filter:drop-shadow(0 0 5px rgba(217,180,74,.9))}
+.bangle b{display:block;font-family:'Great Vibes',cursive;font-weight:400;font-size:22px;color:var(--gold3);line-height:1.2}
+.bangle small{display:block;font-size:12px;opacity:.6;font-style:italic}
+.bangle.on small{opacity:1;color:#0f6a4f}
+.send{margin-top:18px;border:0;cursor:pointer;font:inherit;font-size:20px;color:#fdf3cf;padding:12px 34px;border-radius:40px;background:linear-gradient(#12705a,#0a4a39);box-shadow:0 6px 14px rgba(0,0,0,.25),inset 0 0 0 1px rgba(243,220,149,.6)}
+
+/* dua */
+.dua{font-family:'Amiri',serif;direction:rtl;font-size:clamp(26px,7.5vw,34px);line-height:1.9;color:var(--gold);max-width:360px;text-shadow:0 0 20px rgba(217,180,74,.35)}
+.mosque{width:100%;max-width:420px;margin:24px auto 0;display:block}
+.fam{margin-top:6px;font-size:17px;color:var(--gold2)}
+
+/* hall extras + compliments */
+.ital{font-style:italic;font-size:17px;margin:2px 0 12px}
+.sub2{font-style:italic;font-size:16px;opacity:.92}
+.two{display:flex;gap:12px;width:100%;max-width:380px;margin-top:6px;text-align:center}
+.two>div{flex:1}
+.two p,.stars p{font-size:17px;line-height:1.35;margin-top:4px}.two p{font-size:15.5px;text-wrap:balance}
+.two .cap{margin-bottom:8px}
+.stars{margin-top:24px}
+.notecard{margin-top:22px;padding:16px 20px;border:1px dashed var(--gold3);border-radius:10px;max-width:300px;font-style:italic;background:rgba(255,253,245,.6)}
+.notecard b{display:block;font-size:30px;margin-top:2px}
+.contact{margin-top:24px}.contact p{margin:4px 0 8px}.contact .b{margin:0 3px}
+
+/* ui */
+#dots{position:fixed;top:50%;transform:translateY(-50%);right:max(6px,calc((100vw - 480px)/2 + 4px));z-index:20;display:flex;flex-direction:column;gap:10px}
+body.locked #dots{display:none}
+#dots a{width:8px;height:8px;border-radius:50%;border:1px solid var(--gold);display:block;opacity:.6;transition:.3s}
+#dots a.on{background:var(--gold);opacity:1;transform:scale(1.3)}
+#music{position:fixed;top:12px;right:max(10px,calc((100vw - 480px)/2 + 10px));z-index:60;width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);background:rgba(6,36,27,.85);color:var(--gold);font-size:17px;cursor:pointer;display:none}
+.sparkles{position:fixed;inset:0;pointer-events:none;z-index:5;max-width:480px;margin:0 auto}
+.sparkles i{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffe9a0;box-shadow:0 0 8px 2px rgba(255,220,120,.7);opacity:0;animation:tw 4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:0;transform:translateY(0)}50%{opacity:.9;transform:translateY(-14px)}}
+#gen{display:none;max-width:480px;margin:0 auto;padding:16px;background:#f5efdd;color:#222;font:14px system-ui,sans-serif}
+#gen textarea{width:100%;height:110px;margin:8px 0;padding:8px;border:1px solid #999}
+#gen button{padding:8px 14px}
+#gen .row{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #ccc}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body class="locked">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e3a1"/><stop offset=".5" stop-color="#d9b44a"/><stop offset="1" stop-color="#8f6b1d"/></linearGradient>
+<radialGradient id="gGlow"><stop offset="0" stop-color="#fff3c4" stop-opacity=".95"/><stop offset="1" stop-color="#f3c04a" stop-opacity="0"/></radialGradient>
+<linearGradient id="gWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b3d2e"/><stop offset="1" stop-color="#06241b"/></linearGradient>
+</defs></svg>
+
+<div id="gen">
+  <b>Guest link generator</b> — names, one per line
+  <textarea id="names" placeholder="Ahmed Khan&#10;Zoya Begum"></textarea>
+  <button id="mk">Generate links</button>
+  <div id="out"></div>
+</div>
+
+<div id="cover">
+  <div class="door l"></div><div class="door r"></div>
+  <div class="top cap">You are invited</div>
+  <button id="seal" aria-label="Open invitation">
+    <svg viewBox="-60 -60 120 120"><circle r="58" fill="url(#gGold)"/><circle r="52" fill="#0b3d2e"/><circle r="49" fill="none" stroke="url(#gGold)" stroke-width="1.5"/>
+    <g class="spin" fill="url(#gGold)"><polygon points="0,-44 8,-14 38,-22 18,0 38,22 8,14 0,44 -8,14 -38,22 -18,0 -38,-22 -8,-14"/></g>
+    <circle r="16" fill="url(#gGlow)"/><circle r="8" fill="#fff3c4"/></svg>
+  </button>
+  <div class="tap cap">Tap to open</div>
+</div>
+
+<div class="sparkles" id="sp"></div>
+<nav id="dots"></nav>
+<button id="music" aria-label="Toggle music">♪</button>
+<audio id="aud" loop preload="none"></audio>
+<div class="app" id="app"></div>
+
+<script>
+/* ================= EDIT ONLY THIS BLOCK ================= */
+const C = {
+  groom: "Mohd. Salman",
+  bride: "Shahnuma",
+  hall: {
+    intro: "In the name of “Allah”, the most beneficent & merciful.",
+    host: "Late Haji Abdul Gafoor",
+    hostLine: "cordially invites on the auspicious occasion of the marriage ceremony of his Grandson",
+    groomSub: "(S/o Mr. Mohd. Salim)",
+    brideSub: "(D/o Mr. Ayyub Hasan)",
+    joiner: "with",
+    address: "R/o Vill. Miyanki, Post Badgaon, Distt. Saharanpur"
+  },
+  families: {
+    groom: { title: "Groom's Family", lines: ["Late Haji Abdul Gafoor", "Mr. Mohd. Salim", "Dera Ilahipura, Saharanpur"] },
+    bride: { title: "Bride's Family", lines: ["Mr. Ayyub Hasan", "Vill. Miyanki, Post Badgaon", "Distt. Saharanpur"] }
+  },
+  letter: [
+    "Assalamu Alaikum {guest},",
+    "In the name of Allah, the most beneficent & merciful.",
+    "Late Haji Abdul Gafoor cordially invites you to the auspicious occasion of the marriage ceremony of his Grandson {groom} (S/o Mr. Mohd. Salim) with {bride} (D/o Mr. Ayyub Hasan), R/o Vill. Miyanki, Post Badgaon, Distt. Saharanpur.",
+    "Barat on Saturday, 14th November, and Dawat-e-Walima on Sunday, 15th November 2026. Your presence and duas will make our joy complete.",
+    "Jazakumullahu khairan."
+  ],
+  events: [
+    { id:"barat", title:"Barat", sub:"Invitation of Barat", date:"2026-11-14T10:00:00+05:30", timeText:"Departure · 10:00 am",
+      venue:"Barat will depart from our residence (Dera Ilahipura, Near Police Line, J.V. Jain College Road) to Shagun Palace, Ambehta Chand, Badgaon Road, Saharanpur",
+      mapQuery:"Shagun Palace Ambehta Chand Badgaon Road Saharanpur" },
+    { id:"walima", title:"Walima", sub:"Dawat-e-Walima", date:"2026-11-15T12:00:00+05:30", timeText:"Lunch · 12:00 noon",
+      venue:"Blue Diamond Palace, Naya Gaon, Malhipur Road, Saharanpur",
+      mapQuery:"Blue Diamond Palace Naya Gaon Malhipur Road Saharanpur" }
+  ],
+  countdownTo: "barat",          // id of the event to count down to
+  rsvpBy: "",                    // e.g. "the 10th of November, 2026" (leave empty to hide)
+  whatsapp: "918273466578",      // RSVP replies go to this WhatsApp number (country code, no + or spaces)
+  musicUrl: "",                  // e.g. "nasheed.mp3" placed next to index.html (leave empty for no music)
+  rsvpList: ["M. Yameen Ahmad", "Haji Tahir Hasan", "Zahid Hasan, M. Wajid", "M. Mustakeem, M. Aabid", "M. Kamil"],
+  wbcf: ["M. Arif, M. Raqib", "M. Aaqib, M. Arman", "M. Shahrukh, Abdul Samad", "M. Asad, M. Aayan", "Huzaifa"],
+  stars: ["Azhan, Zayan", "Azlan, Abdul Wali"],
+  note: { text: "You are warmly invited for my brother's wedding", by: "Iqra Appi" },
+  contact: { name: "Mohd. Salim", phones: ["8273466578", "8791380200"] },
+  closing: "Jazakumullahu khairan for your duas"
+};
+/* ======================================================== */
+
+const $ = (s, r=document) => r.querySelector(s);
+const qs = new URLSearchParams(location.search);
+const guest = (qs.get("guest") || "").trim().slice(0, 60);
+const fmt = (iso, o) => new Date(iso).toLocaleDateString("en-IN", Object.assign({timeZone:"Asia/Kolkata"}, o));
+const rep = s => s.replace(/\{groom\}/g, C.groom).replace(/\{bride\}/g, C.bride);
+
+/* ---------- art (original SVG) ---------- */
+const lantern = `<svg viewBox="0 0 100 200"><line x1="50" y1="0" x2="50" y2="20" stroke="url(#gGold)" stroke-width="2"/>
+<circle cx="50" cy="26" r="6" fill="none" stroke="url(#gGold)" stroke-width="3"/>
+<path d="M30 54 Q50 24 70 54Z" fill="url(#gGold)"/><path d="M26 54H74L70 62H30Z" fill="url(#gGold)"/>
+<path d="M30 62H70L78 138H22Z" fill="#0f3d30" stroke="url(#gGold)" stroke-width="2.5"/>
+<ellipse cx="50" cy="100" rx="26" ry="34" fill="url(#gGlow)"/>
+<path d="M38 74Q50 60 62 74V124H38Z" fill="#ffefb0" opacity=".6"/>
+<path d="M50 68V126M38 98H62" stroke="url(#gGold)" stroke-width="1.5"/>
+<path d="M22 138H78L72 148H28Z" fill="url(#gGold)"/>
+<path d="M50 148V168" stroke="url(#gGold)" stroke-width="2"/><circle cx="50" cy="175" r="5" fill="url(#gGold)"/><path d="M50 180L44 196M50 180V198M50 180L56 196" stroke="url(#gGold)" stroke-width="1.5"/></svg>`;
+
+const casket = `<svg viewBox="0 0 300 200">
+<defs><pattern id="pCask" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M11 1l4 6 6 4-6 4-4 6-4-6-6-4 6-4z" fill="none" stroke="#9a8a5e" stroke-width=".8"/></pattern></defs>
+<ellipse cx="150" cy="188" rx="125" ry="8" fill="#000" opacity=".18"/>
+<path id="beam" d="M60 100 L30 -10 H270 L240 100Z" fill="url(#gGlow)" opacity=".9"/>
+<rect x="30" y="96" width="240" height="84" rx="8" fill="#d6cfba" stroke="url(#gGold)" stroke-width="3"/>
+<rect x="30" y="96" width="240" height="84" rx="8" fill="url(#pCask)"/>
+<rect x="30" y="140" width="240" height="8" fill="url(#gGold)"/>
+<circle cx="46" cy="184" r="7" fill="url(#gGold)"/><circle cx="254" cy="184" r="7" fill="url(#gGold)"/>
+<g id="lid"><path d="M26 98Q30 50 150 46Q270 50 274 98Z" fill="#ddd6c0" stroke="url(#gGold)" stroke-width="3"/>
+<path d="M26 98Q30 50 150 46Q270 50 274 98Z" fill="url(#pCask)"/>
+<rect x="24" y="90" width="252" height="10" rx="3" fill="url(#gGold)"/>
+<circle cx="150" cy="82" r="13" fill="url(#gGold)"/><path d="M150 90c-7-5-8-11-4-13 2-1 4 0 4 2 0-2 2-3 4-2 4 2 3 8-4 13z" fill="#0b3d2e"/></g></svg>`;
+
+const dome = `<svg class="dome" viewBox="0 0 100 62"><path d="M50 2C52 10 70 14 84 36Q88 46 78 54H22Q12 46 16 36C30 14 48 10 50 2Z" fill="url(#gGold)"/><rect x="16" y="52" width="68" height="8" rx="2" fill="url(#gGold)"/></svg>`;
+
+function astrolabe(){
+  let jewels = "", ticks = "";
+  for (let k = 0; k < 16; k++) { const a = k * Math.PI / 8; jewels += `<circle cx="${(Math.cos(a)*117).toFixed(1)}" cy="${(Math.sin(a)*117).toFixed(1)}" r="3.2" fill="${k%2?'#2fbf8f':'#fff3c4'}"/>`; }
+  return `<svg viewBox="0 0 300 340">
+<circle cx="150" cy="22" r="14" fill="none" stroke="url(#gGold)" stroke-width="5"/>
+<path d="M104 78Q150 -8 196 78Z" fill="url(#gGold)"/><circle cx="150" cy="56" r="7" fill="#2fbf8f"/><circle cx="128" cy="68" r="4" fill="#fff3c4"/><circle cx="172" cy="68" r="4" fill="#fff3c4"/>
+<g transform="translate(150 196)">
+<circle r="124" fill="url(#gGold)"/><circle r="115" fill="#0b3d2e"/>
+<g class="r1"><circle r="104" fill="none" stroke="#f5ecd2" stroke-width="22"/><circle r="104" fill="none" stroke="#9a7424" stroke-width="22" stroke-dasharray="1.2 8.4"/></g>
+<g class="r2"><circle r="78" fill="none" stroke="#f5ecd2" stroke-width="16"/><circle r="78" fill="none" stroke="#9a7424" stroke-width="16" stroke-dasharray="1.2 7"/></g>
+<circle r="60" fill="#0f5240" stroke="url(#gGold)" stroke-width="2"/>
+<g class="r3" fill="none" stroke="url(#gGold)" stroke-width="1.4"><polygon points="0,-52 14,-30 40,-34 28,-10 50,8 24,16 22,42 0,28 -22,42 -24,16 -50,8 -28,-10 -40,-34 -14,-30"/><circle r="30"/><circle r="14"/></g>
+<circle r="5" fill="url(#gGold)"/>${jewels}</g></svg>`;
+}
+
+const mosque = `<svg class="mosque" viewBox="0 0 300 280"><defs><g id="mq">
+<rect x="40" y="92" width="220" height="48" fill="#0e3b2f" stroke="url(#gGold)" stroke-width="1.5"/>
+<path d="M118 140V82Q150 42 182 82V140Z" fill="#072a20" stroke="url(#gGold)" stroke-width="2"/>
+<path d="M130 140V94Q150 68 170 94V140Z" fill="url(#gGlow)"/>
+<path d="M114 80Q150 -8 186 80Z" fill="url(#gGold)"/><path d="M150 -8V-20M146 -16h8" stroke="url(#gGold)" stroke-width="2"/>
+<path d="M60 92Q80 52 100 92Z" fill="url(#gGold)"/><path d="M200 92Q220 52 240 92Z" fill="url(#gGold)"/>
+<rect x="24" y="44" width="16" height="96" fill="#0e3b2f" stroke="url(#gGold)" stroke-width="1.5"/><path d="M22 44Q32 16 42 44Z" fill="url(#gGold)"/>
+<rect x="260" y="44" width="16" height="96" fill="#0e3b2f" stroke="url(#gGold)" stroke-width="1.5"/><path d="M258 44Q268 16 278 44Z" fill="url(#gGold)"/>
+<g fill="#ffd978"><rect x="54" y="104" width="10" height="22" rx="5"/><rect x="76" y="104" width="10" height="22" rx="5"/><rect x="214" y="104" width="10" height="22" rx="5"/><rect x="236" y="104" width="10" height="22" rx="5"/><rect x="28" y="62" width="8" height="14" rx="4"/><rect x="264" y="62" width="8" height="14" rx="4"/></g>
+</g></defs>
+<rect x="0" y="140" width="300" height="140" fill="url(#gWater)"/>
+<use href="#mq"/><use href="#mq" transform="translate(0 280) scale(1 -1)" opacity=".28"/></svg>`;
+
+/* ---------- scenes ---------- */
+const scenes = [];
+scenes.push(["Cover", `
+<section class="scene dark" id="s0"><div class="arch fade">
+ <div class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+ <p class="ital">${C.hall.intro}</p>
+ <div class="cap" style="letter-spacing:.14em">${C.hall.host}</div>
+ <p class="ital" style="font-size:15px;opacity:.85;margin:4px 0 10px">${C.hall.hostLine}</p>
+ <div class="script g names">${C.groom}</div><div class="sub2">${C.hall.groomSub}</div>
+ <div class="and">${C.hall.joiner}</div>
+ <div class="script g names">${C.bride}</div><div class="sub2">${C.hall.brideSub}</div>
+ <div class="dia"></div><div class="sub2" style="font-size:15px">${C.hall.address}</div></div>
+ <div class="scrollhint">SCROLL ↓</div></section>`]);
+
+scenes.push(["Letter", `
+<section class="scene marble" id="s1">
+ <div class="cap fade">A letter for</div>
+ <div class="script gd fade" id="gname" style="font-size:clamp(42px,12vw,58px)"></div>
+ <div class="casket fade" id="casket">${casket}</div>
+ <div class="hint" id="chint">Tap the casket to open your letter</div>
+ <div class="paper" id="paper"><div class="sheet" id="sheet"></div></div>
+</section>`]);
+
+scenes.push(["Families", `
+<section class="scene dark" id="s2">
+ <div class="cap fade">With the blessings of</div>
+ <div class="script g fade" style="font-size:54px">Our Families</div>
+ <div class="rail"></div>
+ <div class="lanterns fade">
+  <div class="lan">${lantern}<div class="cap">${C.families.groom.title}</div>${C.families.groom.lines.map(l=>`<p>${l}</p>`).join("")}</div>
+  <div class="lan">${lantern}<div class="cap">${C.families.bride.title}</div>${C.families.bride.lines.map(l=>`<p>${l}</p>`).join("")}</div>
+ </div>
+</section>`]);
+
+scenes.push(["Events", `
+<section class="scene marble" id="s3">
+ <div class="cap fade">Please join us for</div>
+ <div class="script gd fade" style="font-size:clamp(44px,13vw,60px)">The Festivities</div>
+ ${C.events.map((e,i)=>`
+ <article class="ev ${i%2?'flip':''} fade" data-i="${i}">
+  <div class="jh">${dome}<div class="win"><div class="in"><div class="shut sl"></div><div class="shut sr"></div></div></div><div class="sill"></div></div>
+  <div class="evt"><h3 class="script">${e.title}</h3>${e.sub?`<div class="wd" style="color:var(--gold3)">${e.sub}</div>`:""}<div class="dia"></div>
+   <div class="wd">${fmt(e.date,{weekday:"long"}).toUpperCase()}</div>
+   <div class="dm">${fmt(e.date,{day:"numeric",month:"long",year:"numeric"}).toUpperCase()}</div>
+   <div class="tm">${e.timeText}</div>
+   <div class="more"><div class="vn">${e.venue}</div>
+    <div class="evb"><a class="b" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.mapQuery||e.venue)}">Directions</a><button class="b" data-ics="${i}">Add to calendar</button></div></div>
+   <div class="hint2">Open the window</div></div>
+ </article>`).join("")}
+</section>`]);
+
+scenes.push(["Countdown", `
+<section class="scene dark" id="s4">
+ <div class="cap fade">Our day is</div>
+ <div class="script g fade" style="font-size:clamp(40px,12vw,54px)">Written in the Stars</div>
+ <div class="astro fade">${astrolabe()}</div>
+ <div class="cd" id="cd"></div>
+ <div class="hint" id="cdhint"></div>
+</section>`]);
+
+scenes.push(["Compliments", `
+<section class="scene marble" id="s5">
+ <div class="cap fade">With best compliments</div>
+ <div class="script gd fade" style="font-size:clamp(40px,12vw,54px)">Family &amp; Friends</div>
+ <div class="dia"></div>
+ <div class="two fade">
+  <div><div class="cap">R.S.V.P.</div>${C.rsvpList.map(x=>`<p>${x}</p>`).join("")}</div>
+  <div><div class="cap">W.B.C.F.</div>${C.wbcf.map(x=>`<p>${x}</p>`).join("")}</div>
+ </div>
+ <div class="stars fade"><div class="script gd" style="font-size:34px">Little Stars..</div>${C.stars.map(x=>`<p>${x}</p>`).join("")}</div>
+ <div class="notecard fade"><p>${C.note.text}</p><b class="script gd">${C.note.by}</b></div>
+ <div class="contact fade"><div class="cap">For queries</div><p>${C.contact.name}</p>${C.contact.phones.map(x=>`<a class="b" href="tel:+91${x}">${x}</a>`).join(" ")}</div>
+</section>`]);
+
+scenes.push(["Dua", `
+<section class="scene dark" id="s6">
+ <div class="dua fade">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+ <p class="hint fade" style="max-width:320px">May Allah bless you both, shower His blessings upon you, and unite you in goodness.</p>
+ ${mosque}
+ <div class="fam">${C.closing}</div>
+</section>`]);
+
+$("#app").innerHTML = scenes.map(s => s[1]).join("");
+
+/* dots */
+$("#dots").innerHTML = scenes.map((s,i)=>`<a href="#s${i}" title="${s[0]}"></a>`).join("");
+
+/* guest name + letter */
+$("#gname").textContent = guest || "our dear guest";
+(function(){
+  const sheet = $("#sheet");
+  C.letter.forEach(t => {
+    const p = document.createElement("p");
+    rep(t).split("{guest}").forEach((part, i, arr) => {
+      p.appendChild(document.createTextNode(part));
+      if (i < arr.length - 1) { const s = document.createElement("span"); s.className = "gn"; s.textContent = guest || "dear guest"; p.appendChild(s); }
+    });
+    sheet.appendChild(p);
+  });
+})();
+$("#casket").onclick = () => { $("#casket").classList.add("open"); $("#paper").classList.add("show"); $("#chint").style.display = "none";
+  setTimeout(() => $("#paper").scrollIntoView({behavior:"smooth", block:"center"}), 700); };
+
+/* events */
+document.addEventListener("click", e => {
+  const ev = e.target.closest(".ev");
+  if (ev && !e.target.closest(".b")) ev.classList.toggle("open");
+  const ib = e.target.closest("[data-ics]");
+  if (ib) icsDownload(C.events[+ib.dataset.ics]);
+});
+function icsDownload(ev){
+  const st = new Date(ev.date), en = new Date(st.getTime() + 3*3600e3);
+  const z = d => d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+  const txt = ["BEGIN:VCALENDAR","VERSION:2.0","BEGIN:VEVENT","DTSTART:"+z(st),"DTEND:"+z(en),
+    `SUMMARY:${ev.title} - ${C.groom} & ${C.bride}`,`LOCATION:${ev.venue}`,"END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([txt], {type:"text/calendar"}));
+  a.download = ev.id + ".ics"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+/* countdown */
+const target = C.events.find(e => e.id === C.countdownTo) || C.events[0];
+$("#cdhint").textContent = `Counting down to the ${target.title}`;
+function tick(){
+  const diff = new Date(target.date) - Date.now(), box = $("#cd");
+  if (diff <= 0) { box.innerHTML = `<div style="width:auto;padding:10px 18px"><b style="font-size:18px">Alhamdulillah — the celebrations have begun</b></div>`; return; }
+  const d = Math.floor(diff/864e5), h = Math.floor(diff%864e5/36e5), m = Math.floor(diff%36e5/6e4), s = Math.floor(diff%6e4/1e3);
+  box.innerHTML = [[d,"DAYS"],[h,"HOURS"],[m,"MIN"],[s,"SEC"]].map(([n,l]) => `<div><b>${n}</b><span>${l}</span></div>`).join("");
+}
+tick(); setInterval(tick, 1000);
+
+/* cover */
+const aud = $("#aud");
+if (C.musicUrl) { aud.src = C.musicUrl; $("#music").style.display = "block"; }
+$("#music").onclick = () => { if (aud.paused) { aud.play().catch(()=>{}); $("#music").style.opacity = 1; } else { aud.pause(); $("#music").style.opacity = .5; } };
+function openCover(){
+  $("#cover").classList.add("open");
+  if (C.musicUrl) { aud.play().catch(()=>{}); }
+  setTimeout(() => { $("#cover").style.display = "none"; document.body.classList.remove("locked"); window.scrollTo(0,0); }, 1900);
+}
+$("#seal").onclick = openCover;
+$("#cover").addEventListener("click", e => { if (e.target.classList.contains("door")) openCover(); });
+
+/* reveal + dots */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("in"); }), {threshold:.15});
+document.querySelectorAll(".fade").forEach(el => io.observe(el));
+const dots = [...document.querySelectorAll("#dots a")];
+const io2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const i = +e.target.id.slice(1); dots.forEach((d,k) => d.classList.toggle("on", k === i)); } }), {threshold:.5});
+document.querySelectorAll(".scene").forEach(s => io2.observe(s));
+
+/* sparkles */
+$("#sp").innerHTML = Array.from({length:26}, () => `<i style="left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${(Math.random()*4).toFixed(2)}s;animation-duration:${(3+Math.random()*3).toFixed(1)}s"></i>`).join("");
+
+/* guest link generator: ?gen=1 */
+if (qs.get("gen")) {
+  $("#gen").style.display = "block"; $("#cover").style.display = "none"; document.body.classList.remove("locked");
+  $("#mk").onclick = () => {
+    const base = location.origin + location.pathname, out = $("#out"); out.innerHTML = "";
+    $("#names").value.split("\n").map(s => s.trim()).filter(Boolean).forEach(n => {
+      const url = `${base}?guest=${encodeURIComponent(n)}`;
+      const wa = `https://wa.me/?text=${encodeURIComponent(`Assalamu Alaikum ${n}, aapko hamari shaadi mein invite karte hain 🤍\n${url}`)}`;
+      const r = document.createElement("div"); r.className = "row";
+      r.innerHTML = `<span></span><span><a target="_blank" rel="noopener">WhatsApp</a> · <a href="#" class="cp">Copy link</a></span>`;
+      r.firstChild.textContent = n; r.querySelector("a").href = wa;
+      r.querySelector(".cp").onclick = e => { e.preventDefault(); navigator.clipboard.writeText(url); e.target.textContent = "Copied"; };
+      out.appendChild(r);
+    });
+  };
+}
+</script>
+</body>
+</html>
